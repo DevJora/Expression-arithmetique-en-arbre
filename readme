@@ -1,0 +1,10 @@
+#Arbre et expression arithmétique
+##langage c
+
+execution
+
+yacc -d parser.y
+lex lex.l
+gcc -c lex.yy.c
+gcc -c arbre.c
+gcc -o test y.tab.c lex.yy.o arbre.o
